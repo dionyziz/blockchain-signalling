@@ -1,0 +1,27 @@
+\begin{abstract}
+  Bitcoin and related cryptocurrencies are systematically upgraded by soft and
+  hard forks. The success of a fork is conditioned in the premise that it
+  will be adopted by the supermajority of miners. To ensure that miners will
+  indeed adopt by supermajority, a signalling protocol has been developed which
+  allows miners to advertise their intention (or not) to adopt a protocol
+  change. If the signalling ratio exceeds a particular threshold within a given
+  election period, the protocol change is adopted. This is termed a
+  miner-activated soft fork (MASF).
+
+  In this paper, we study the relationship between the \emph{apparent} signaling
+  ratio reported on the blockchain and the \emph{actual} opinion of miners. We
+  prove that, even when all honest miners vote according to their opinion, the
+  apparent ratio can be made to diverge significantly from the actual opinion
+  with overwhelming probability by attacks which we term \emph{election
+  meddling} attacks. These attacks, which are similar but different from
+  \emph{chain quality} attacks allow an adversarial minority miner to skew the
+  election results in favour of their preference. We establish a lower and an
+  upper bound on how much election meddling can be done by an adversary. We then
+  discuss two protocols for mitigating the problem: First, a secret ballot
+  mechanism which requires miners to hide their vote, and, secondly, a protocol
+  which mines for votes and for blocks independently. We show, unlike deployed
+  systems, the latter protocol allows the apparent opinion to really be used as
+  a vote tally indicating apparent preference of the underlying computational
+  power. Finally, we provide a straight-forward construction to deploy the
+  mechanism in the existing Bitcoin blockchain without any forks.
+\end{abstract}
